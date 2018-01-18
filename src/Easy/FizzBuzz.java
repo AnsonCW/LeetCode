@@ -17,12 +17,7 @@ import java.util.List;
 public class FizzBuzz {
 	
 	public static void main(String[] args) {
-		List<String> list = fizzBuzz(30);
-		for( String l : list )
-		{
-			System.out.println(l);
-		}
-
+		System.out.println(fizzBuzz(30).toString());
 	}
 	
 	public static List<String> fizzBuzz(int n) {
