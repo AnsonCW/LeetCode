@@ -23,7 +23,8 @@ import java.util.Map;
 public class FirstUniqueCharacterInAString {
 
 	public static void main(String[] args) {
-		String s = "";
+		String s = "leedcode";
+       
 		System.out.println(firstUniqChar(s));
 	}
 	
@@ -36,6 +37,7 @@ public class FirstUniqueCharacterInAString {
 	    {
 	    	map.put(st, map.getOrDefault(st, 0) + 1);
 	    }
+	    
 	    for(int i = 0; i < sa.length; i++)
 	    {
 	    	if(map.getOrDefault(sa[i],0) == 1) return i;
