@@ -13,7 +13,6 @@ package Easy;
 public class PowerOfThree {
 
 	public static void main(String[] args) {
-		
 	
 		System.out.println( isPowerOfThree(0) );
 	
