@@ -33,11 +33,8 @@ public class FindAllDuplicatesInAnArray {
         for(int i = 0; i < nums.length; i++)
         {
         	int j = Math.abs(nums[i]);
-        	System.out.println("i:" + i);
-        	System.out.println("j:" + j);
         	if(nums[j-1] > 0) nums[j-1] = -nums[j-1];
         	else if(nums[j-1] < 0) res.add(j);
-        	System.out.println("+++++++++++++++");
         }
         return res;
     }
