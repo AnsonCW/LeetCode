@@ -13,12 +13,7 @@ package Easy;
 public class SingleNumber {
 
 	public static void main(String[] args) {
-		int nums[] = new int[3];
-		nums[0] = 1;
-		nums[1] = 2;
-		nums[2] = 2;
-		
-		
+		int nums[] = {1,2,2};
 		System.out.println( singleNumber( nums ) );
 		
 	}
@@ -31,7 +26,6 @@ public class SingleNumber {
 		{
 			if( x == null ) x = i;
 			else x = x ^ i;
-			
 		}
 		
 		return x;
